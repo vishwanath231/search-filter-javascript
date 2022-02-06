@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER TITLE -->
+    <div class="header__title">
+        <h3>search management</h3>
+    </div>
+    
+    <!-- VALID MSG -->
+    <div id="valid"></div>
+    
+    <!-- TABLE TOOLS -->
+    <div class="tools">
+        <div class="tools__container">
+
+            <!-- CATEGORY -->
+            <form class="select__form">
+                <select id="select">
+                    <option value="">select category</option>
+                    <option value="name">Name</option>
+                    <option value="email">Email</option>
+                    <option value="age">Age</option>
+                    <option value="phone">Phone</option>
+                </select>
+            </form>
+              
+            <!-- ASCENDING & DESCENDING BUTTONS -->
+            <div class="btns">
+                <button id="ascending">ascending</button>
+                <button id="descending">descending</button>
+            </div>
+              
+            <!-- SEARCH BOX -->
+            <form class="search__form">
+               <input name="search" id="search" placeholder="search..." />
+            </form>
+        </div>
+    </div>
+
+
+    <!-- TABLE CONTAINER -->
+    <div id="main">
+        <table class="table__container">
+            <thead>
+                <tr>
+                    <th>SNO</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>AGE</th>
+                    <th>PHONE</th>
+                </tr>
+            </thead>
+            <tbody id="table__body"></tbody>
+        </table>
+    </div>
+      
+    
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
